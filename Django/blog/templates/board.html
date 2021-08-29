@@ -1,0 +1,37 @@
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<form class="form-horizontal" action='' method="POST">
+  {% csrf_token %}
+  <fieldset>
+    <div id="legend">
+      <legend class="">Register</legend>
+    </div>
+    <div class="control-group">
+      <!-- Username -->
+      <label class="control-label"  for="title">Title</label>
+      <div class="controls">
+        <input type="text" id="title" name="title" placeholder="" class="input-xlarge">
+      </div>
+    </div>
+    <div class="control-group">
+      <!-- Username -->
+      <label class="control-label"  for="contents">Contents</label>
+      <div class="controls">
+        <textarea name="contents" id="contents" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+        <input type="file" name="images" multiple>
+      </div>
+    </div>
+      <!-- Button -->
+      <div class="controls">
+        <button class="btn btn-success">회원가입</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
